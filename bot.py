@@ -12,7 +12,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 app = Application.builder().token(TOKEN).build()
 
-print("BOT BASLADI")
+print("BOT BASLADI 2")
 
 app.add_handler(CommandHandler("start", start))
 
