@@ -8,10 +8,12 @@ TOKEN = os.getenv("TOKEN")
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
-    await update.message.reply_text("LastZ bot çalışıyor!")
+    await update.message.reply_text("LastZ Bot Aktif!")
 
 app = Application.builder().token(TOKEN).build()
-print("BOT BASLADI 1")
+
+print("BOT BASLADI")
+
 app.add_handler(CommandHandler("start", start))
 
 app.run_polling()
