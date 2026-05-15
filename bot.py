@@ -11,7 +11,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("LastZ bot çalışıyor!")
 
 app = Application.builder().token(TOKEN).build()
-
+print("BOT BASLADI")
 app.add_handler(CommandHandler("start", start))
 
 app.run_polling()
